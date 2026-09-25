@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SAT 2026 FSS 25 Hard</title><style>body{margin:0;font-family:Arial;background:#0f172a;color:#0f172a}.top{position:sticky;top:0;background:#0f172a;color:#fff;padding:10px;display:flex;gap:8px;flex-wrap:wrap;align-items:center}.pill{background:#1e293b;border:1px solid #555;padding:4px 10px;border-radius:99px;font-size:13px}#barW{height:8px;background:#333;flex:1;min-width:100px;border-radius:99px;overflow:hidden}#bar{height:100%;width:0;background:#06b6d4}.wrap{max-width:1000px;margin:auto;padding:12px}.card{background:#fff;border-radius:12px;padding:14px;margin:12px 0;border-top:5px solid #4f46e5}.card.ok{border-color:#16a34a;background:#f0fdf4}.card.no{border-color:#dc2626;background:#fef2f2}.stem{background:#f1f5f9;border:1px solid #ddd;border-radius:8px;padding:10px;margin:8px 0;line-height:1.6}.opt{display:block;width:100%;text-align:left;border:2px solid #ddd;border-radius:8px;padding:9px;margin:6px 0;background:#fff;cursor:pointer}.opt.sel{border-color:#4f46e5;background:#eef2ff}.opt.right{border-color:#16a34a;background:#dcfce7}.opt.wrong{border-color:#dc2626;background:#fee2e2}.pn{display:none;margin-top:8px;padding:10px;border-radius:8px;font-size:14px;line-height:1.6}.pn.show{display:block}.h{background:#fffbeb;border:1px dashed #f59e0b}.w{background:#f0fdf4;border:1px solid #22c55e}.v{background:#eef2ff;border:1px solid #818cf8}button{border-radius:8px;border:0;padding:8px 12px;font-weight:700;cursor:pointer}.bp{background:#4f46e5;color:#fff}.bh{background:#fef3c7;border:1px solid #f59e0b}.bw{background:#dcfce7;border:1px solid #22c55e}.bv{background:#e0e7ff;border:1px solid #818cf8}.fb{display:none;font-weight:800;padding:8px;border-radius:8px;margin-top:8px}.fb.show{display:block}.o{background:#16a34a;color:#fff}.n{background:#dc2626;color:#fff}.nav{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}.dt{border:2px solid #ddd;border-radius:8px;text-align:center;padding:6px;font-weight:800}.dt.ok{background:#16a34a;color:#fff}.dt.no{background:#dc2626;color:#fff}</style></head><body>
+
+<div class="top"><b>SAT 2026 Form Structure Sense</b><div id="barW"><div id="bar"></div></div><div class="pill" id="pt">0/25</div><div class="pill" id="st">Score 0</div><div class="pill" id="tm">00:00</div></div><div class="wrap"><h1 style="color:#fff">Form, Structure and Sense: 25 HARD</h1><p style="color:#cbd5e1">Grammar and Usage drill. Each Q has Vocab + Hint + Why buttons.</p><button class="bp" onclick="checkAll()">Check All</button> <button onclick="showAll()">Show All Explanations</button> <button onclick="location.reload()">Reset</button><div style="display:grid;grid-template-columns:1fr 220px;gap:12px"><div id="quiz"></div><div><div class="card"><h3 style="margin:0">Score</h3><div id="big" style="font-size:36px;font-weight:900;color:#4f46e5">0/25</div><div id="msg">Start!</div><div class="nav" id="nav" style="margin-top:8px"></div></div><div class="card"><b>Method:</b><div style="font-size:13px">1 Read full sentence<br>2 Find Subject Verb<br>3 No comma splice<br>4 Match number tense<br>5 Parallel lists<br>6 Modifier touches target</div></div></div></div></div><script>let S=[],D=[],Q=[];
+
+Q.push(["Boundaries","Biologist studied reef for months, _____ she found a bleaching pattern.","and in doing so|doing so, and|she, in doing so,|, in doing so",0,"Need AND: two sentences cannot join with comma alone.","A. Both sides independent. Add conjunction.","documented=recorded; bleaching=color loss; pattern=trend"]);
+
+Q.push(["Agreement","The collection of essays, with photos and maps, _____ a portrait of the city.","provide|provides|have provided|are providing",1,"Cross out fluff. Head is collection singular.","B provides. Together-with never changes number.","collection=set; portrait=picture"]);
+
+Q.push(["Tense","By the time panel meets next month, scientists _____ data for a decade.","will have been collecting|will collect|have collected|collected",0,"By plus future plus duration equals future perfect.","A. Continuous up to future point.","panel=group; duration=length"]);
+
+Q.push(["Pronoun","Museum acquired sculptures and displayed _____ in new wing.","it|them|those|they",1,"Plural antecedent plus object case.","B them. Plural object. It singular, they subject.","acquired=bought; displayed=shown"]);
+
+Q.push(["Modifier","_____ the committee approved the transit plan.","Having reviewed the report,|Having been reviewed, the report,|Reviewing was done,|The report having reviewed,",0,"Who reviewed? Noun after comma equals doer.","A. Only committee can review. Others dangle.","transit=transport; proposal=plan"]);
+
+Q.push(["Parallel","Book is engaging, researched, and _____ with stories.","it enriches|enriched|enriching|enrichment",1,"All list items must be adjectives.","B enriched keeps parallel adjectives.","engaging=interesting; anecdotes=stories"]);
+
+Q.push(["Apostrophe","The _____ choice to revise bylaws shocked all.","board's|boards'|boards|boards's",0,"One board owns it.","A board's singular possessive.","bylaws=rules; revise=change"]);
+
+
+Q.push(["VerbForm","Architect proposed _____ facade while updating inside.","to preserve|preserving|preserve|preserved",1,"Propose takes gerund ing.","B preserving. Memorize verb plus gerund.","facade=front; preserve=keep"]);
+
+Q.push(["Compare","Battery lasts twice as long as _____ of old one.","that|those|the one|it",0,"Singular battery equals that.","A that singular. Those plural.","battery=cell; previous=earlier"]);
+
+Q.push(["Agreement2","Neither players nor coach _____ happy with calls.","were|was|are|have been",1,"Neither nor matches nearest subject.","B was matches coach singular.","officiating=refereeing; calls=decisions"]);
+
+Q.push(["Participle","Fossils _____ in rock suggest rapid burial.","preserved|having preserved|preserving|to preserve",0,"Fossils receive action equals passive.","A preserved passive participle.","fossils=remains; burial=covering"]);
+
+Q.push(["Lists","Variables: temp, humidity, and _____ radiation.","comma light and|light semicolon and|light and|light and comma",2,"Simple list uses commas only.","C correct serial commas.","variables=factors; humidity=moisture"]);
+
+Q.push(["Adverb","She played the passage _____ despite little practice.","flawless|flawlessly|flawlessness|flawlesser",1,"How played equals adverb.","B flawlessly modifies verb.","passage=section; rehearsal=practice"]);
+
+Q.push(["Parallel2","Success needs curiosity, persistence, and _____ failure as data.","to view|viewing|view|views",1,"All nouns or gerunds.","B viewing gerund equals noun.","persistence=grit; curiosity=interest"]);
+
+Q.push(["Punct","Novel weaves plots _____ each ends in finale.","semicolon however comma|comma however|semicolon however|however comma",0,"However needs semicolon before comma after.","A pattern IC semicolon however comma IC.","interweaves=mixes; finale=end"]);
+
+Q.push(["Number","The number of species _____ risen despite laws.","has|have|are|were",0,"The number singular.","A has. A number would be plural.","endangered=at risk; species=types"]);
+
+Q.push(["Dangle","Walking in archive, _____ old letters found.","historian discovered|discovery was made of|there were discovered|discovered were",0,"Who walking? Must follow comma.","A historian was walking. Others dangle.","archive=records; historian=scholar"]);
+
+
+Q.push(["Data","The data _____ that parks cut heat a lot.","indicates|indicate|have indicated|are indicating",0,"SAT treats data singular plus present truth.","A indicates simple present.","mitigate=reduce; urban=city"]);
+
+Q.push(["Each","Each of the members _____ to file a form.","are|is|were|have been",1,"Each always singular.","B is. Ignore of-members.","disclosure=reveal; submit=hand in"]);
+
+Q.push(["Colon","Goal for summer: _____ each essay by Orwell.","to read|read|reading|she would read",0,"Goal equals infinitive after colon.","A to read elaborates goal.","major=important; essay=piece"]);
+
+Q.push(["Whose","Professor _____ work changed language science gives keynote.","whose|who's|whom|which",0,"Possessive equals whose.","A whose. Who's equals who is.","linguistics=language study; keynote=speech"]);
+
+Q.push(["Subj","Team insisted prototype _____ tested before launch.","be|is|was|will be",0,"Demand verbs take base form.","A be subjunctive after insist.","prototype=model; launch=release"]);
+
+Q.push(["Poss","The two _____ plans clashed, forcing delay.","speakers'|speaker's|speakers|speakers's",0,"Two owners plural possessive.","A speakers apostrophe after s.","conflicted=clashed; delay=postpone"]);
+
+Q.push(["Contrast","Plants make food _____ breathing releases it for growth.","semicolon whereas|comma whereas|whereas comma|whereas semicolon",0,"Two sentences contrast needs semicolon.","A semicolon whereas joins legally.","photosynthesis=food making; fuel=power"]);
+
+Q.push(["Each2","Every exhibit and each display _____ cleaned daily.","is|are|were|have been",0,"Every plus each singular.","A is. Every/each singular.","exhibit=show; display=item"]);
+
+function tg(id){document.getElementById(id).classList.toggle('show')}function sel(i,j){if(D[i])return;S[i]=j;for(let k=0;k<4;k++){let e=document.getElementById('q'+i+'o'+k);if(e)e.classList.remove('sel')}document.getElementById('q'+i+'o'+j).classList.add('sel');upd()}function chk(i){if(S[i]<0){alert('Pick answer for Q'+(i+1));return}D[i]=true;let q=Q[i],ok=S[i]===q[3];let card=document.getElementById('c'+i);card.classList.add(ok?'ok':'no');document.getElementById('q'+i+'o'+q[3]).classList.add('right');if(!ok)document.getElementById('q'+i+'o'+S[i]).classList.add('wrong');let f=document.getElementById('f'+i);f.className='fb show '+(ok?'o':'n');f.textContent=ok?'Correct!':'Wrong. Answer '+ 'ABCD'[q[3]];document.getElementById('e'+i).classList.add('show');document.getElementById('n'+i).classList.add(ok?'ok':'no');upd()}function upd(){let a=S.filter(x=>x>=0).length,c=0;D.forEach((d,i)=>{if(d&&S[i]===Q[i][3])c++});document.getElementById('pt').textContent=a+'/25';document.getElementById('st').textContent='Score '+c;document.getElementById('bar').style.width=(a/25*100)+'%';document.getElementById('big').textContent=c+'/25';document.getElementById('msg').textContent=a<25?'Keep going '+a+'/25':(c>=22?'SAT ready!':c>=18?'Strong!':'Review!')}function checkAll(){Q.forEach((q,i)=>{if(S[i]<0)S[i]=q[3];if(!D[i])chk(i)});scrollTo(0,0)}function showAll(){Q.forEach((q,i)=>{document.getElementById('e'+i).classList.add('show');document.getElementById('v'+i).classList.add('show')})}let sec=0;setInterval(()=>{sec++;let m=String(Math.floor(sec/60)).padStart(2,'0'),s=String(sec%60).padStart(2,'0');document.getElementById('tm').textContent=m+':'+s},1000);
+
+S=Q.map(_=>-1);D=Q.map(_=>false);function render(){let qz=document.getElementById('quiz');qz.innerHTML='';let nv=document.getElementById('nav');nv.innerHTML='';Q.forEach((q,i)=>{let d=document.createElement('div');d.className='card';d.id='c'+i;let opts=q[2].split('|');let ol=opts.map((t,j)=>'<button class="opt" id="q'+i+'o'+j+'" onclick="sel('+i+','+j+')"><b>'+'ABCD'[j]+'.</b> '+t+'</button>').join('');let vl=q[6].split(';').map(x=>'<div style="background:#fff;border:1px solid #aaa;border-radius:6px;padding:4px;margin:4px 0">'+x+'</div>').join('');d.innerHTML='<b>Q'+(i+1)+' ['+q[0]+' HARD]</b><div class="stem">'+q[1]+'</div>'+ol+'<div><button class="bv" onclick="tg(\'v'+i+'\')">Vocab Help</button> <button class="bh" onclick="tg(\'h'+i+'\')">Show Hint</button> <button class="bw" onclick="tg(\'e'+i+'\')">Why Correct</button></div><div class="pn v" id="v'+i+'"><b>Vocab:</b>'+vl+'</div><div class="pn h" id="h'+i+'"><b>Hint:</b>'+q[4]+'</div><div class="pn w" id="e'+i+'"><b>Why:</b>'+q[5]+' Answer '+'ABCD'[q[3]]+'</div><div><button class="bp" style="width:100%;margin-top:8px" onclick="chk('+i+')">Check Answer</button></div><div class="fb" id="f'+i+'"></div>';qz.appendChild(d);let n=document.createElement('div');n.className='dt';n.id='n'+i;n.textContent=i+1;nv.appendChild(n)});upd()}render();</script></body></html>
+
+
